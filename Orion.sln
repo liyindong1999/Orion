@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Orion", "Orion\Orion.vcxproj", "{8CFEDCD4-192F-467A-81A9-64CE4B849922}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{8FA40461-6328-4035-B141-280C66E982A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CFEDCD4-192F-467A-81A9-64CE4B849922}.Debug|x64.ActiveCfg = Debug|x64
+		{8CFEDCD4-192F-467A-81A9-64CE4B849922}.Debug|x64.Build.0 = Debug|x64
+		{8CFEDCD4-192F-467A-81A9-64CE4B849922}.Release|x64.ActiveCfg = Release|x64
+		{8CFEDCD4-192F-467A-81A9-64CE4B849922}.Release|x64.Build.0 = Release|x64
+		{8FA40461-6328-4035-B141-280C66E982A8}.Debug|x64.ActiveCfg = Debug|x64
+		{8FA40461-6328-4035-B141-280C66E982A8}.Debug|x64.Build.0 = Debug|x64
+		{8FA40461-6328-4035-B141-280C66E982A8}.Release|x64.ActiveCfg = Release|x64
+		{8FA40461-6328-4035-B141-280C66E982A8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49BCE33F-2F7E-4494-9B96-FFAB30B9112D}
+	EndGlobalSection
+EndGlobal
