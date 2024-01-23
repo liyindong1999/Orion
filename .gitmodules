@@ -1,0 +1,3 @@
+[submodule "Orion/ThirdParty/spdlog"]
+	path = Orion/ThirdParty/spdlog
+	url = https://github.com/gabime/spdlog
