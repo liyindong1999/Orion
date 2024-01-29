@@ -19,6 +19,10 @@
     <ClInclude Include="src\Orion\Log.h">
       <Filter>Orion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orion\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Orion\Events\Event.h" />
+    <ClInclude Include="src\Orion\Events\KeyEvent.h" />
+    <ClInclude Include="src\Orion\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orion\Application.cpp">
