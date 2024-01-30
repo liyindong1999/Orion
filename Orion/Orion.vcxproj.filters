@@ -4,6 +4,9 @@
     <Filter Include="Orion">
       <UniqueIdentifier>{8CE0D40D-F8F4-FCBE-C176-A01E2D4AF9EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Orion\Events">
+      <UniqueIdentifier>{F0F60E51-DC59-9EF5-85DF-D6AB71216A78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Orion.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\Orion\EntryPoint.h">
       <Filter>Orion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orion\Events\ApplicationEvent.h">
+      <Filter>Orion\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orion\Events\Event.h">
+      <Filter>Orion\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orion\Events\KeyEvent.h">
+      <Filter>Orion\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orion\Events\MouseEvent.h">
+      <Filter>Orion\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Orion\Log.h">
       <Filter>Orion</Filter>
     </ClInclude>
-    <ClInclude Include="src\Orion\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Orion\Events\Event.h" />
-    <ClInclude Include="src\Orion\Events\KeyEvent.h" />
-    <ClInclude Include="src\Orion\Events\MouseEvent.h" />
+    <ClInclude Include="src\OrionPCH.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orion\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\Orion\Log.cpp">
       <Filter>Orion</Filter>
     </ClCompile>
+    <ClCompile Include="src\OrionPCH.cpp" />
   </ItemGroup>
 </Project>

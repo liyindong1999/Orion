@@ -18,6 +18,9 @@ project "Orion"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("Intermediate/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "OrionPCH.h"
+	pchsource "Orion/src/OrionPCH.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

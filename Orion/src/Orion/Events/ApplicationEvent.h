@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 using namespace std;
 
 namespace Orion

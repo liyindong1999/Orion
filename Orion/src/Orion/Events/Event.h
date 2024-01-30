@@ -1,8 +1,6 @@
 #pragma once
 
 #include "Orion/Core.h"
-#include <string>
-#include <functional>
 
 using namespace std;
 
