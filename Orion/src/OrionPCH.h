@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Orion/Log.h"
+
 #ifdef ORION_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

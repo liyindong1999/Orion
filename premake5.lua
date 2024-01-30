@@ -10,6 +10,11 @@ workspace "Orion"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Orion/ThirdParty/GLFW/include"
+
+include "Orion/ThirdParty/GLFW"
+
 project "Orion"
 	location "Orion"
 	kind "SharedLib"
@@ -30,7 +35,14 @@ project "Orion"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/ThirdParty/spdlog/include"
+		"%{prj.name}/ThirdParty/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

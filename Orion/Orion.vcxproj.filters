@@ -7,6 +7,12 @@
     <Filter Include="Orion\Events">
       <UniqueIdentifier>{F0F60E51-DC59-9EF5-85DF-D6AB71216A78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Orion.h" />
@@ -34,7 +40,13 @@
     <ClInclude Include="src\Orion\Log.h">
       <Filter>Orion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orion\Window.h">
+      <Filter>Orion</Filter>
+    </ClInclude>
     <ClInclude Include="src\OrionPCH.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orion\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Orion</Filter>
     </ClCompile>
     <ClCompile Include="src\OrionPCH.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
