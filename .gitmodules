@@ -1,3 +1,6 @@
 [submodule "Orion/ThirdParty/spdlog"]
 	path = Orion/ThirdParty/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Orion/ThirdParty/GLFW"]
+	path = Orion/ThirdParty/GLFW
+	url = https://github.com/glfw/glfw
