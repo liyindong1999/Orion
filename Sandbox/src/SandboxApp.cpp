@@ -2,11 +2,22 @@
 #include "Orion.h"
 
 
+class ExampleLayer : public Orion::Layer
+{
+public:
+	ExampleLayer() : Layer("Example") {}
+
+	void OnUpdate() override { ORION_INFO("ExampleLayr::Update"); }
+	void OnEvent(Orion::Event& event) override { ORION_TRACE("{0}", event); }
+};
+
+
+
 class Sandbox : public Orion::Application
 {
 public:
-	Sandbox() {};
-	~Sandbox() {};
+	Sandbox() { PushLayer(new ExampleLayer()); }
+	~Sandbox() {}
 };
 
 Orion::Application* Orion::CreateApplication()

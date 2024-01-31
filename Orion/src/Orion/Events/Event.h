@@ -36,7 +36,10 @@ namespace Orion
 	class ORION_API Event
 	{
 		friend class EventDispatcher;
+
 	public:
+		bool m_Handled = false;
+
 		virtual EventType GetEventType() const = 0; //获取事件类型
 		virtual const char* GetName() const = 0; //获取名称
 		virtual int GetCategoryFlags() const = 0; //获取事件类别标志
@@ -47,8 +50,6 @@ namespace Orion
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
-		bool m_Handled = false;
 	};
 
 	//事件分发器

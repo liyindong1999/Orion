@@ -1,9 +1,10 @@
 #pragma once
 
-#include "Core.h"
-#include "Events/Event.h"
-#include "Events/ApplicationEvent.h"
-#include "Window.h"
+#include "Orion/Core.h"
+#include "Orion/Events/Event.h"
+#include "Orion/Events/ApplicationEvent.h"
+#include "Orion/Window.h"
+#include "Orion/LayerStack.h"
 
 using namespace std;
 
@@ -14,6 +15,9 @@ namespace Orion
 	private:
 		unique_ptr<Window> m_Window;
 		bool m_Running = true;
+		LayerStack m_LayerStack;
+
+		bool OnWindowCloseEvent(WindowCloseEvent& e);
 
 	public:
 		Application();
@@ -22,7 +26,8 @@ namespace Orion
 		void Run();
 
 		void OnEvent(Event& e);
-		bool OnWindowCloseEvent(WindowCloseEvent& e);
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* overlay);
 	};
 
 	//To be defined in client

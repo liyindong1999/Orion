@@ -37,6 +37,12 @@
     <ClInclude Include="src\Orion\Events\MouseEvent.h">
       <Filter>Orion\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orion\Layer.h">
+      <Filter>Orion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orion\LayerStack.h">
+      <Filter>Orion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Orion\Log.h">
       <Filter>Orion</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orion\Application.cpp">
+      <Filter>Orion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Orion\Layer.cpp">
+      <Filter>Orion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Orion\LayerStack.cpp">
       <Filter>Orion</Filter>
     </ClCompile>
     <ClCompile Include="src\Orion\Log.cpp">

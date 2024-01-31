@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -110,6 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -137,6 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -160,6 +163,8 @@
     <ClInclude Include="src\Orion\Events\Event.h" />
     <ClInclude Include="src\Orion\Events\KeyEvent.h" />
     <ClInclude Include="src\Orion\Events\MouseEvent.h" />
+    <ClInclude Include="src\Orion\Layer.h" />
+    <ClInclude Include="src\Orion\LayerStack.h" />
     <ClInclude Include="src\Orion\Log.h" />
     <ClInclude Include="src\Orion\Window.h" />
     <ClInclude Include="src\OrionPCH.h" />
@@ -167,6 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orion\Application.cpp" />
+    <ClCompile Include="src\Orion\Layer.cpp" />
+    <ClCompile Include="src\Orion\LayerStack.cpp" />
     <ClCompile Include="src\Orion\Log.cpp" />
     <ClCompile Include="src\OrionPCH.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
