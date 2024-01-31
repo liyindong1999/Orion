@@ -65,7 +65,7 @@ namespace Orion
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 	};
 
-	class ORION_API MouseButtonPressedEvent : MouseButtonEvent
+	class ORION_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonPressedEvent(int button) : MouseButtonEvent(button) {}
@@ -80,7 +80,7 @@ namespace Orion
 		EVENT_CLASS_TYPE(MouseButtonPressed)
 	};
 
-	class ORION_API MouseButtonReleasedEvent : MouseButtonEvent
+	class ORION_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonReleasedEvent(int button) : MouseButtonEvent(button) {}
