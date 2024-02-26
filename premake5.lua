@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Orion/ThirdParty/GLFW/include"
+IncludeDir["Glad"] = "Orion/ThirdParty/Glad/include"
 
 include "Orion/ThirdParty/GLFW"
+include "Orion/ThirdParty/Glad"
 
 project "Orion"
 	location "Orion"
@@ -36,12 +38,14 @@ project "Orion"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/ThirdParty/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -53,7 +57,8 @@ project "Orion"
 		defines
 		{
 			"ORION_PLATFORM_WINDOWS",
-			"ORION_BUILD_DLL"
+			"ORION_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
