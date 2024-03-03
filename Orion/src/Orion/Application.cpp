@@ -9,9 +9,13 @@ namespace Orion
 {
 
 	#define BIND_EVENT_FN(x) bind(&Application::x, this, placeholders::_1)
+
+	Application* Application::s_Instance = nullptr;
 	
 	Application::Application()
 	{
+		ORION_CORE_ASSERT(!s_Instance, "Application already exists!")
+		s_Instance = this;
 		m_Window = unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
 	}
@@ -49,11 +53,13 @@ namespace Orion
 	void Application::PushLayer(Layer* layer)
 	{
 		m_LayerStack.PushLayer(layer);
+		layer->OnAttach();
 	}
 
-	void Application::PushOverlay(Layer* overlay)
+	void Application::PushOverlay(Layer* layer)
 	{
-		m_LayerStack.PushOverlay(overlay);
+		m_LayerStack.PushOverlay(layer);
+		layer->OnAttach();
 	}
 
 	bool Application::OnWindowCloseEvent(WindowCloseEvent& e)

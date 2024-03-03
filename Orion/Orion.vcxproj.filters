@@ -7,8 +7,14 @@
     <Filter Include="Orion\Events">
       <UniqueIdentifier>{F0F60E51-DC59-9EF5-85DF-D6AB71216A78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Orion\ImGui">
+      <UniqueIdentifier>{B68EDE9D-2244-5793-AB38-516A17ED4D97}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Orion\Events\MouseEvent.h">
       <Filter>Orion\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orion\ImGui\ImGuiLayer.h">
+      <Filter>Orion\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Orion\Layer.h">
       <Filter>Orion</Filter>
     </ClInclude>
@@ -50,6 +59,9 @@
       <Filter>Orion</Filter>
     </ClInclude>
     <ClInclude Include="src\OrionPCH.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -57,6 +69,9 @@
   <ItemGroup>
     <ClCompile Include="src\Orion\Application.cpp">
       <Filter>Orion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Orion\ImGui\ImGuiLayer.cpp">
+      <Filter>Orion\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Orion\Layer.cpp">
       <Filter>Orion</Filter>
@@ -68,6 +83,9 @@
       <Filter>Orion</Filter>
     </ClCompile>
     <ClCompile Include="src\OrionPCH.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>

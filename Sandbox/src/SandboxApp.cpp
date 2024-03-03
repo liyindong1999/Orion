@@ -16,7 +16,11 @@ public:
 class Sandbox : public Orion::Application
 {
 public:
-	Sandbox() { PushLayer(new ExampleLayer()); }
+	Sandbox() 
+	{ 
+		PushLayer(new ExampleLayer()); 
+		PushOverlay(new Orion::ImGuiLayer());
+	}
 	~Sandbox() {}
 };
 

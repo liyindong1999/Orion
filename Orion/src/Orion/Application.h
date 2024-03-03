@@ -19,6 +19,9 @@ namespace Orion
 
 		bool OnWindowCloseEvent(WindowCloseEvent& e);
 
+	private:
+		static Application* s_Instance;
+
 	public:
 		Application();
 		virtual ~Application();
@@ -27,7 +30,10 @@ namespace Orion
 
 		void OnEvent(Event& e);
 		void PushLayer(Layer* layer);
-		void PushOverlay(Layer* overlay);
+		void PushOverlay(Layer* layer);
+
+		inline Window& GetWindow() { return *m_Window; }
+		inline static Application& Get() { return *s_Instance; }
 	};
 
 	//To be defined in client

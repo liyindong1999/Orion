@@ -4,3 +4,6 @@
 [submodule "Orion/ThirdParty/GLFW"]
 	path = Orion/ThirdParty/GLFW
 	url = https://github.com/glfw/glfw
+[submodule "Orion/ThirdParty/imgui"]
+	path = Orion/ThirdParty/imgui
+	url = https://github.com/ocornut/imgui
