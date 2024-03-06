@@ -50,6 +50,7 @@ namespace Orion
 		glfwMakeContextCurrent(m_Window);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		ORION_CORE_ASSERT(status, "Failed to initailize Glad!");
+
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
@@ -100,6 +101,13 @@ namespace Orion
 					break;
 				}
 			}
+		});
+
+		glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int KeyCode) 
+		{
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+			KeyTypedEvent event(KeyCode);
+			data.EventCallback(event);
 		});
 
 		//…Ë÷√ Û±Í∞¥º¸ callback

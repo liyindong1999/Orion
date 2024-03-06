@@ -13,7 +13,7 @@ namespace Orion
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved, //窗口事件
 		AppTick, AppUpdate, AppRender, //应用事件
-		KeyPressed, KeyReleased, //按键事件
+		KeyPressed, KeyReleased, KeyTyped, //按键事件
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled //鼠标事件
 	};
 

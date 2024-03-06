@@ -54,4 +54,20 @@ namespace Orion
 
 		EVENT_CLASS_TYPE(KeyReleased)
 	};
+
+	class ORION_API KeyTypedEvent : public KeyEvent
+	{
+	public:
+		KeyTypedEvent(unsigned int keycode) : KeyEvent(keycode) {}
+
+		// for debug using only ?
+		string ToString() const override
+		{
+			stringstream ss;
+			ss << "KeyTypedEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
+	};
 }
