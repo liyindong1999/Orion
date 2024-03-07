@@ -10,6 +10,11 @@
 	#error Orion only support windows
 #endif
 
+// #ifdef ORION_DEBUG
+// 	#define ORION_ENABLE_ASSERTS
+// #endif
+
+
 #ifdef ORION_ENABLE_ASSERTS
 	#define ORION_ASSERT(x, ...) { if(!(x)) { ORION_ERROR("Assertion Failed : {0}", __VA_VRGS__); __debugbreak(); } }
 	#define ORION_CORE_ASSERT(x, ...) { if(!(x)) { ORION_CORE_ERROR("Assertion Failed : {0}", __VA_VRGS__); __debugbreak(); } }
