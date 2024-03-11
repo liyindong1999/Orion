@@ -2,6 +2,8 @@
 
 #include "Application.h"
 #include "Log.h"
+#include "Input.h"
+#include <glad/glad.h>
 
 using namespace std;
 
@@ -29,8 +31,13 @@ namespace Orion
 	{
 		while (m_Running)
 		{
+			glClear(GL_COLOR_BUFFER_BIT);
+
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
+
+			auto [x, y] = Input::GetMousePosition();
+			ORION_CORE_TRACE("{0}, {1}", x, y);
 
 			m_Window->OnUpdate();
 		}
