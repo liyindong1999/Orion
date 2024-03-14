@@ -163,9 +163,11 @@
     <ClInclude Include="src\Orion\Events\MouseEvent.h" />
     <ClInclude Include="src\Orion\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Orion\Input.h" />
+    <ClInclude Include="src\Orion\KeyCodes.h" />
     <ClInclude Include="src\Orion\Layer.h" />
     <ClInclude Include="src\Orion\LayerStack.h" />
     <ClInclude Include="src\Orion\Log.h" />
+    <ClInclude Include="src\Orion\MouseButtonCodes.h" />
     <ClInclude Include="src\Orion\Window.h" />
     <ClInclude Include="src\OrionPCH.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
