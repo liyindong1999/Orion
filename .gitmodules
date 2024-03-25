@@ -7,3 +7,6 @@
 [submodule "Orion/ThirdParty/imgui"]
 	path = Orion/ThirdParty/imgui
 	url = https://github.com/ocornut/imgui
+[submodule "Orion/ThirdParty/glm"]
+	path = Orion/ThirdParty/glm
+	url = https://github.com/g-truc/glm

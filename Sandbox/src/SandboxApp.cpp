@@ -1,7 +1,6 @@
 #include <OrionPCH.h>
 #include "Orion.h"
 
-
 class ExampleLayer : public Orion::Layer
 {
 public:

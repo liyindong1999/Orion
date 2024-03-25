@@ -14,6 +14,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Orion/ThirdParty/GLFW/include"
 IncludeDir["Glad"] = "Orion/ThirdParty/Glad/include"
 IncludeDir["ImGui"] = "Orion/ThirdParty/imgui"
+IncludeDir["glm"] = "Orion/ThirdParty/glm"
 
 include "Orion/ThirdParty/GLFW"
 include "Orion/ThirdParty/Glad"
@@ -34,7 +35,9 @@ project "Orion"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/ThirdParty/glm/glm/**.hpp",
+		"%{prj.name}/ThirdParty/glm/glm/**.inl",
 	}
 
 	includedirs
@@ -43,7 +46,8 @@ project "Orion"
 		"%{prj.name}/ThirdParty/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -104,7 +108,8 @@ project	"Sandbox"
 	includedirs
 	{
 		"Orion/ThirdParty/spdlog/include",
-		"Orion/src"
+		"Orion/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links
